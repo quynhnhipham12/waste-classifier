@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-eco-bg: #FAFAF7;
+  --color-eco-ink: #1B2420;
+  --color-eco-primary: #2F6E4F;
+  --color-eco-primary-dark: #21503A;
+  --color-eco-accent: #E8623A;
+  --color-eco-surface: #EFEEE6;
+
+  --color-waste-glass: #6FA8C7;
+  --color-waste-metal: #9AA0A6;
+  --color-waste-cardboard: #B08655;
+  --color-waste-organic: #6B8F3C;
+  --color-waste-plastic: #E0B23C;
+  --color-waste-paper: #D9CBB5;
+
+  --font-display: "Be Vietnam Pro", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-eco-bg);
+  color: var(--color-eco-ink);
+  font-family: var(--font-body);
+  margin: 0;
+}
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: ripple 1.8s ease-out infinite;
+}
